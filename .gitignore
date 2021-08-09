@@ -1,2 +1,7 @@
 # Python notebooks
 *.ipynb
+.ipynb_checkpoints
+
+# environments
+.python-version
+.env
