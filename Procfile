@@ -1,1 +1,1 @@
-Web: uvicorn app.main:app
+web: uvicorn app.main:app
