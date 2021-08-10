@@ -1,4 +1,4 @@
-from utils import Sigmoid, BinaryCrossEntropy
+from .utils import Sigmoid, BinaryCrossEntropy
 import numpy as np
 
 

@@ -5,3 +5,7 @@
 # environments
 .python-version
 .env
+
+# Python cache
+__pycache__
+

@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from twitter import get_tweets, create_api
-from utils import create_data
-from nn import MLPerceptron
+from .twitter import get_tweets, create_api
+from .utils import create_data
+from .nn import MLPerceptron
 from dotenv import load_dotenv
-from transformers import transform_data, transform_new
+from .transformers import transform_data, transform_new
 import numpy as np
 
 
