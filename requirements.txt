@@ -3,3 +3,4 @@ tweepy
 scikit-learn
 python-dotenv
 fastapi[all]
+gunicorn
