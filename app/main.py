@@ -14,7 +14,7 @@ class Body(BaseModel):
   name_1: str
   name_2: str
   text: str
-    
+
 class Payload(BaseModel):
   code: str = "None"
   message: str = "None"
@@ -40,7 +40,7 @@ async def predict(body: Body):
   except Exception as e:
     payload.code = "error"
     payload.message = e
-    
+
 
   if payload.code != "error":
     X, y = create_data(X, y)
@@ -56,7 +56,3 @@ async def predict(body: Body):
     payload.message = str(prediction[0][0])
 
   return payload
-
-@app.post("/pred_test")
-async def test(body: Body):
-  return body
